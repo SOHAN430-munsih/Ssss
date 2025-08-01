@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aviator Multiplier Predictor</title>
+</head>
+<body>
+    <h2>Aviator Prediction</h2>
+    <form action="/predict" method="post">
+        <label>Last Multiplier:</label>
+        <input type="text" name="multiplier1" required>
+        <label>Second Last Multiplier:</label>
+        <input type="text" name="multiplier2" required>
+        <label>Third Last Multiplier:</label>
+        <input type="text" name="multiplier3" required>
+        <button type="submit">Predict</button>
+    </form>
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
